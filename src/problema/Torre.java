@@ -26,6 +26,15 @@ public class Torre {
 		return this.discos.get(indice);
 	}
 	
+	public String toString(){
+		String nomeDiscos = "( ";
+		for (Disco d : this.discos) {
+			nomeDiscos += d.getNome() + " ";
+		}
+		nomeDiscos += ")";
+		return nomeDiscos;
+	}
+	
 
 }
 
